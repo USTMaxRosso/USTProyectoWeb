@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <section>
+        <h3>Login</h3>
+        <div>
+            <p>
+                Ingrese sus credenciales
+            </p>
+        </div>
+        <div>
+            <form id="formLogin">
+                <div>
+                    <label for="">
+                        Email:
+                    </label>
+                </div>
+                <div>
+                    <input type="email" id="correo" name="correo" placeholder="example@example.cl" required>
+                </div>
+                <div>
+                    <label for="">Clave:</label>
+                </div>
+                <div>
+                    <input type="password" id="clave" name="clave" placeholder="Tu Clave Aquí" required>
+                </div>
+                <div>
+                    <input type="submit" name="entrar" value="Entrar">
+                </div>
+            </form>
+            <div id="mensajeError"></div> <!-- Contenedor para mensajes de error -->
+        </div>
+    </section>
+    <script src="/assets/backend/js/app.js"></script>
+</body>
+</html>

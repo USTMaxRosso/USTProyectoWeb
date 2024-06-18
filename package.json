@@ -1,0 +1,19 @@
+{
+    "name": "smartvirtual",
+    "version":"1.0.0",
+    "description":"Plataforma Web creada en Node.js",
+    "main":"src/server.js",
+    "scripts": {
+        "start": "node src/server.js"
+    },
+    "dependencies": {
+        "express":"4.18.3",
+        "express-session":"1.18.0",
+        "connect-flash":"0.1.1",
+        "mysql":"2.18.1",
+        "dotenv":"16.4.5",
+        "bcrypt":"5.1.1"
+    },
+    "author":"Rodrigo Madrid <rodrigomadrid@santotomas.cl>",
+    "license":"MIT"
+}

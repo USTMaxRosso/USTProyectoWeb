@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <header>
+        <!-- BEGIN Contenedor para la barra de menu horizontal superior -->
+        <div>
+            <ul>
+                <!-- BEGIN Item 1-->
+                <li>
+                    <a href="/auth/logout">Cerrar Sesión</a>
+                </li>
+                <!-- END Item 1-->
+            </ul>
+        </div>
+        <!-- END Contenedor para la barra de menu horizontal superior -->
+    </header>
+    <nav>
+        {{ menu }}
+    </nav>
+    <main>
+        {{ main }}
+    </main>
+    <script src="/assets/backend/js/app.js"></script>
+</body>
+</html>
