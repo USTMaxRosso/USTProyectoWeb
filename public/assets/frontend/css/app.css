@@ -1,0 +1,132 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+header, nav, main {
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #2b2d42;
+    color: white;
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header li {
+    margin-left: 20px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav > ul {
+    background-color: #2b2d42;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+nav > ul > li {
+    position: relative;
+}
+
+nav > ul > li > a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul ul li {
+    margin-bottom: 10px;
+}
+
+nav ul ul li a {
+    color: #2b2d42;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+/* Main Styles */
+main {
+    background-color: white;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #2b2d42;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #2b2d42;
+}
+
+p {
+    color: #6c757d;
+}
+
+/* H3 Box Styles */
+h3 {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+/* Button Styles */
+button, a.button {
+    background-color: #ffd700;
+    color: #2b2d42;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+}
+
+button:hover, a.button:hover {
+    background-color: #ffcc00;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2b2d42;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
