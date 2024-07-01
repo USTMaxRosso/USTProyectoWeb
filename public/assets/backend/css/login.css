@@ -1,0 +1,66 @@
+/* Login Section Styles */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
+    min-height: 100vh; /* Asegura que ocupe toda la altura de la pantalla */
+    background-color: #f8f9fa; /* Usa el mismo color de fondo que el body */
+}
+
+section h3 { 
+    font-size: 3em; /* 3 veces el tamaño de fuente normal */
+    background-color: #2b2d42; /* Color de fondo del recuadro */
+    color: white; /* Color de texto blanco para contraste */
+    padding: 10px 20px; /* Espacio interno del recuadro */
+    border-radius: 5px; /* Bordes ligeramente redondeados */
+    margin-bottom: 20px; 
+}
+
+/* Form Styles */
+#formLogin {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil (del estilo base) */
+    width: 350px; /* Ancho fijo para el formulario */
+}
+
+#formLogin div {
+    margin-bottom: 15px;
+}
+
+#formLogin label {
+    display: block;
+    margin-bottom: 5px;
+    color: #2b2d42; /* Color de texto de los títulos */
+}
+
+#formLogin input[type="email"],
+#formLogin input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Incluye el padding y borde en el ancho total */
+}
+
+#formLogin input[type="submit"] {
+    background-color: #ffd700; /* Color dorado de los botones */
+    color: #2b2d42;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#formLogin input[type="submit"]:hover {
+    background-color: #ffcc00; /* Tono más oscuro al pasar el ratón */
+}
+
+/* Mensaje de Error */
+#mensajeError {
+    color: red;
+    margin-top: 10px;
+}
