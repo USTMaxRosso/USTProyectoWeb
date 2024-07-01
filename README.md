@@ -11,6 +11,7 @@ También hace uso de `package.json`, un componente esencial en proyectos `Node.j
 -[Instalación](#instalación)
 -[Iniciar Servidor Web Local de la Aplicación](#iniciar-servidor-web-local-de-la-aplicación)
 -[Crear Primer Usuario](#crear-primer-usuario)
+-[Crear Clientes](#crear-clientes)
 -[Uso](#uso)
 
 ## Instalación
@@ -66,7 +67,8 @@ Asegúrate de que las variables reflejen la configuración específica de tu ent
 
 4. **Instalar la Base de Datos MySQL**
 
-En la raíz del proyecto se encuentra un directorio llamado `db`, donde está almacenada la base de datos de la plataforma con el nombre de archivo `db_node.sql`. Para configurarlo, accede a `phpMyAdmin` o una herramienta similar, crea una nueva base de datos y luego importa el archivo `db_node.sql` dentro de esta nueva base de datos.
+En la raíz del proyecto se encuentra un directorio llamado `db`, donde está almacenada la base de datos de la plataforma con el nombre de archivo `db_node.sql`. Para configurarlo, accede a `phpMyAdmin` o una herramienta similar, crea una nueva base de datos y luego importa el archivo `db_node.sql` dentro de esta nueva base de datos.<br><br>
+En esta versión la `base de datos` ha sido modificada, se agregó una nueva tabla llamada `clientes` y las relaciones entre las tablas `clientes` y `users`.
 
 ## Iniciar Servidor Web Local de la Aplicación
     
@@ -91,6 +93,13 @@ Para crear el Usuario, desde la raíz del proyecto:
 node addPrimerUsuario.js
 ```
 El `user` y el `password` del nuevo usuario para iniciar sesión se encuentran en el código fuente del archivo`addPrimerUsuario.js`. Debe cambiar las credenciales por una segura.
+
+## Crear Clientes
+
+Antes de agregar un nuevo cliente, debe existe un usuario registrado en `users`.<br><br>
+La plataforma ha modificado la base de datos, agregando una nueva tabla llamada `clientes`. Sin embargo, todavía no se ha desarrollado la lógica para agregar un nuevo cliente desde la interfaz. <br>
+Por lo tanto, en esta versión, los `clientes` deben ser agregados manualmente desde un entorno como`phpMyAdmin`.<br>
+Para hacerlo, seleccione la tabla `clientes` en su base de datos, luego elija el menú `Insertar`, complete los campos necesarios y haga clic en `continuar` para guardar los cambios.
 
 ## Uso
 

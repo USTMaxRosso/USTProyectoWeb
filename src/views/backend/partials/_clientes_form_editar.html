@@ -1,0 +1,21 @@
+<form id="formUpdate">
+    <input type="hidden" id="id" name="id" value="{{ id }}">
+    <div><label for="">Nombres</label></div>
+    <div><input type="text" id="nombres" name="nombres" value="{{ nombres }}"></div>
+    <div><label for="">Dirección</label></div>
+    <div><input type="text" id="direccion" name="direccion" value="{{ direccion }}"></div>
+    <div><label for="">Correo</label></div>
+    <div><input type="email" id="correo" name="correo" value="{{ correo }}"></div>
+    <div><label for="">Teléfono</label></div>
+    <div><input type="text" id="telefono" name="telefono" value="{{ telefono }}"></div>
+    <div><label for="">Estado</label></div>
+    <div>
+        <select name="estado" id="estado">
+            {{ options }}
+        </select>
+    </div>
+    <div>
+        <input type="submit" id="guardar" name="guardar" value="Guardar">
+    </div>
+</form>
+<div id="mensajeError"></div>

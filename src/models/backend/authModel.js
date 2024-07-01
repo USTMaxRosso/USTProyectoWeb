@@ -9,7 +9,7 @@ class Auth {
     async autenticarUsuario(email, password) {
         try {
             // Obtener el usuario por nombre de usuario
-            const query = 'SELECT id, email, clave FROM users WHERE email = ? AND estado = 1';
+            const query = 'SELECT * FROM users WHERE email = ? AND estado = 1';
             const [rows] = await this.db.ejecutarQuery(query, [email]);
     
             console.log('Resultado de la consulta SQL en autenticarUsuario:', rows); // Verificar resultados de la consulta
@@ -23,7 +23,7 @@ class Auth {
                 console.log('Resultado de bcrypt.compare:', isMatch); // Verificar resultado de comparación
     
                 if (isMatch) {
-                    return { id: user.id, email: user.email };
+                    return { id: user.id, nombre: user.nombre, email: user.email }; //retorna el usuario autenticado para la sesión sin incluir el password
                 } else {
                     return null; // Contraseña incorrecta
                 }

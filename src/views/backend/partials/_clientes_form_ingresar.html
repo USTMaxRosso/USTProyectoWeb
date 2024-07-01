@@ -1,0 +1,21 @@
+<form id="formUpload">
+    <div><label for="">Nombres</label></div>
+    <div><input type="text" id="nombres" name="nombres" required></div>
+    <div><label for="">Dirección</label></div>
+    <div><input type="text" id="direccion" name="direccion" required></div>
+    <div><label for="">Correo</label></div>
+    <div><input type="email" id="correo" name="correo" required></div>
+    <div><label for="">Teléfono</label></div>
+    <div><input type="text" id="telefono" name="telefono" required></div>
+    <div><label for="">Estado</label></div>
+    <div>
+        <select name="estado" id="estado" required>
+            <option value="1" selected>Habilitado</option>
+            <option value="0">Deshabilitado</option>
+        </select>
+    </div>
+    <div>
+        <input type="submit" name="ingresar" id="ingresar" value="Ingresar">
+    </div>
+    <div id="mensajeError"></div>
+</form>
