@@ -1,0 +1,19 @@
+<form id="SformUpdate">
+    <input type="hidden" id="id" name="id" value="{{ id }}">
+    <div><label for="">Nombre del Servicio</label></div>
+    <div><input type="text" id="nombre_servicio" name="nombre_servicio" value="{{ nombre_servicio }}"></div>
+    <div><label for="">Descripción</label></div>
+    <div><input type="text" id="descripcion" name="descripcion" value="{{ descripcion }}"></div>
+    <div><label for="">Valor</label></div>
+    <div><input type="text" id="valor" name="valor" value="{{ valor }}"></div>
+    <div><label for="">Estado</label></div>
+    <div>
+        <select name="estado" id="estado">
+            {{ options }}
+        </select>
+    </div>
+    <div>
+        <input type="submit" id="guardar" name="guardar" value="Guardar">
+    </div>
+    <div id="mensajeError"></div>
+</form>

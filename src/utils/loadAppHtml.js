@@ -31,7 +31,6 @@ function loadAppHtml(type, pageName, titlePage, contenido, res) {
                 appHtml = appHtml.replace('{{ title }}', titlePage);
                 appHtml = appHtml.replace('{{ menu }}', menuHtml);
                 appHtml = appHtml.replace('{{ main }}', pageHtml);
-
                 appHtml = appHtml.replace('{{ contenido }}', contenido);
 
                 res.statusCode = 200;

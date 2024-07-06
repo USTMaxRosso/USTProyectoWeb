@@ -1,0 +1,25 @@
+<form id="SformUpload">
+    <div>
+        <label for="nombreServicio">Nombre de Servicio</label>
+        <input type="text" id="nombreServicio" name="nombreServicio">
+    </div>
+    <div>
+        <label for="descripcionServicio">Descripción</label>
+        <input type="text" id="descripcionServicio" name="descripcionServicio">
+    </div>
+    <div>
+        <label for="valor">Valor</label>
+        <input type="text" id="valor" name="valor">
+    </div>
+    <div><label for="">Estado</label></div>
+    <div>
+        <select name="estado" id="estado" required>
+            <option value="1" selected>Habilitado</option>
+            <option value="0">Deshabilitado</option>
+        </select>
+    </div>
+    <div>
+        <input type="submit" id="guardar" name="guardar" value="Guardar">
+    </div>
+</form>
+<div id="mensajeError"></div>

@@ -1,8 +1,7 @@
 const fs = require('fs');
 const path = require('path');
-
 const Cliente = require('../../models/backend/clienteModel');
-const  loadAppHtml  = require('../../utils/loadAppHtml');
+const loadAppHtml = require('../../utils/loadAppHtml');
 
 
 function ingresarCliente(req, res) {
@@ -38,7 +37,6 @@ async function agregarCliente(req, res) {
 
 async function listarClientes(req, res) {
     try {
-        // Llama a la función estática del modelo para obtener los clientes
         const clientes = await Cliente.listarClientes();
         let html;
         if(clientes.length > 0)
